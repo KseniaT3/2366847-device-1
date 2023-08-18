@@ -22,7 +22,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Rubik", "Raleway", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -38,6 +46,13 @@ body {
   text-decoration: none;
   font-size: 16px;
   line-height: 18px;
+  background-color: #FFE17F;
+  width: 1160px;
+  height: 300px;
+  margin-top: 40px;
+  margin-right: 140px;
+  margin-left: 140px;
+  margin-bottom: 410px;
 }
 
 .search-button {
@@ -67,6 +82,13 @@ body {
   text-decoration: none;
 }
 
+.main-container {
+  flex-grow: 1;
+  width: 1160px;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .main-navigation-list {
   list-style-type: none;
 }
@@ -89,6 +111,13 @@ body {
   color: inherit;
   text-decoration: none;
   text-transform: none;
+}
+
+.slider-description {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
 }
 
 .slider-list {
@@ -128,12 +157,16 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
 }
 
 .slider-characteristics {
   color: #000;
   font-size: 36px;
   font-weight: bold;
+
 }
 
 .slider-options {
@@ -153,6 +186,15 @@ body {
 
 .product-list {
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+
+.product-link {
+  color: #000;
+  text-decoration: none;
 }
 
 .product-card-link {
@@ -186,6 +228,10 @@ body {
 }
 
 .advantages-list {
+  display: flex;
+  width: 1160px;
+  align-items: center;
+  gap: 116px;
   list-style-type: none;
 }
 
@@ -197,12 +243,17 @@ body {
   font-weight: 800;
   line-height: normal;
   letter-spacing: 4px;
+  background: #F0F0F0;
+  display: flex;
+  width: 1160px;
+  align-items: center;
 }
 
 .delivery-link {
   color: #000;
   text-transform: uppercase;
   text-decoration: none;
+  align-content: center;
 }
 
 .about {
@@ -255,6 +306,10 @@ body {
 
 .subscribe-description {
   color: #444;
+  background: #F0F0F0;
+  width: 1440px;
+  height: 421px;
+  flex-shrink: 0;
 }
 
 /* Каталог*/
@@ -317,6 +372,23 @@ body {
   color: #000;
 }
 
+.index-columns {
+  display: flex;
+  width: 1160px;
+  height: 545px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 108px;
+}
+
+.page-footer-container {
+  display: flex;
+  width: 1440px;
+  height: 321px;
+  flex-shrink: 0;
+  margin: 0 auto;
+}
+
 .footer-page {
   /*родитель*/
   font-family: "Rubik", sans-serif;
@@ -324,11 +396,15 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+  background: #444;
 }
 
 .contact-address-text {
   line-height: 20px;
   font-style: normal;
+  width: 239px;
+  height: 40px;
+  color:#FFF;
 }
 
 .footer-navigation-list {
